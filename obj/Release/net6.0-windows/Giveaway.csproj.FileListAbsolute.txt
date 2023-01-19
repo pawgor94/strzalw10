@@ -1,0 +1,17 @@
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\bin\Release\net6.0-windows\Giveaway.exe
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\bin\Release\net6.0-windows\Giveaway.deps.json
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\bin\Release\net6.0-windows\Giveaway.runtimeconfig.json
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\bin\Release\net6.0-windows\Giveaway.dll
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\bin\Release\net6.0-windows\Giveaway.pdb
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\Giveaway.csproj.AssemblyReference.cache
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\Giveaway.Strzal_w_10.resources
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\Giveaway.csproj.GenerateResource.cache
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\Giveaway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\Giveaway.AssemblyInfoInputs.cache
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\Giveaway.AssemblyInfo.cs
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\Giveaway.csproj.CoreCompileInputs.cache
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\Giveaway.dll
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\refint\Giveaway.dll
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\Giveaway.pdb
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\Giveaway.genruntimeconfig.cache
+C:\Users\pawgor\source\repos\Giveaway\Giveaway\obj\Release\net6.0-windows\ref\Giveaway.dll
