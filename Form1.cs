@@ -788,7 +788,7 @@ namespace Giveaway
 
         private void infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Twórca: \nPawel \"pawgor\" Gorski\nwersja: 1.5.2\n2023-01-19");
+            MessageBox.Show("Twórca: \nPawel \"pawgor\" Gorski\nwersja: 1.6.0a\n2023-01-19");
         }
     }
 }

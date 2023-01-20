@@ -193,13 +193,13 @@ namespace Giveaway
 				if (nowa_nagroda.Text == "")
 					return;
 				index_istniejaca = nagrody.FindStringExact(nowa_nagroda.Text);
+				nagrody.SelectedIndex = index_istniejaca;
 				if (index_istniejaca == -1)
 				{
 					if (losowo.Checked == true)
 					{
 						Random r = new Random();
 						{
-							nagrody.SelectedIndex = index_istniejaca;
 							do
 							{
 								pole = (int)r.NextInt64(1, 100);
@@ -234,7 +234,6 @@ namespace Giveaway
 				dodaj_istniejaca_nagroda(pole);
 			}
 		}
-
 
 		private void zapisz_Click(object sender, EventArgs e)
 		{
