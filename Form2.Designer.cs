@@ -52,10 +52,10 @@
 			// 
 			// podglad_pliku
 			// 
-			this.podglad_pliku.Enabled = false;
 			this.podglad_pliku.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.podglad_pliku.Location = new System.Drawing.Point(461, 35);
 			this.podglad_pliku.Name = "podglad_pliku";
+			this.podglad_pliku.ReadOnly = true;
 			this.podglad_pliku.Size = new System.Drawing.Size(327, 403);
 			this.podglad_pliku.TabIndex = 0;
 			this.podglad_pliku.Text = "";
@@ -123,6 +123,7 @@
 			// 
 			// nagrody
 			// 
+			this.nagrody.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.nagrody.Enabled = false;
 			this.nagrody.FormattingEnabled = true;
 			this.nagrody.Location = new System.Drawing.Point(126, 45);
@@ -217,7 +218,7 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(322, 53);
+			this.label4.Location = new System.Drawing.Point(272, 53);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(65, 15);
 			this.label4.TabIndex = 15;
@@ -226,7 +227,7 @@
 			// plik_zapisu
 			// 
 			this.plik_zapisu.AutoSize = true;
-			this.plik_zapisu.Location = new System.Drawing.Point(322, 68);
+			this.plik_zapisu.Location = new System.Drawing.Point(273, 68);
 			this.plik_zapisu.Name = "plik_zapisu";
 			this.plik_zapisu.Size = new System.Drawing.Size(112, 15);
 			this.plik_zapisu.TabIndex = 16;

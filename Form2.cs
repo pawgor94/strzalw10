@@ -21,17 +21,21 @@ namespace Giveaway
 			InitializeComponent();
 		}
 
-		private void sprawdz_wolne_pole(int x)
+		private Boolean sprawdz_wolne_pole(int x)
 		{
 			x--;
 			String line = podglad_pliku.Lines[x / 10];
 			char c = line[x % 10];
 			if (c == '.')
 			{
-				dodaj.Enabled = true;
+				{
+					return true;
+				}
 			}
 			else
-				dodaj.Enabled = false;
+			{
+				return false;
+			}
 		}
 
 		private void generuj_plik_func(object sender, EventArgs e)
@@ -93,7 +97,7 @@ namespace Giveaway
 			//Nazwy zagrody
 			nowa_nagroda.Enabled = true;
 			nagrody.Enabled = true;
-			//nagrosy radio buttony
+			//nagrody radio buttony
 			dodaj_istniejaca.Enabled = true;
 			dodaj_nowa.Enabled = true;
 			dodaj_nowa.Checked = true;
@@ -132,7 +136,7 @@ namespace Giveaway
 			losowo.Checked = false;
 			recznie.Checked = true;
 			nr_pola_wybor.Enabled = true;
-			sprawdz_wolne_pole((int)nr_pola_wybor.Value);
+			dodaj.Enabled = sprawdz_wolne_pole((int)nr_pola_wybor.Value);
 		}
 
 		private void dodaj_nowa_nagroda(int nr_pola)
@@ -146,9 +150,12 @@ namespace Giveaway
 			litera_nagrody++;
 			if (litera_nagrody == 'X')
 			{
-				litera_nagrody = 'Z';
+				litera_nagrody = 'Y';
 			}
-
+			else if (litera_nagrody == '[')
+			{
+				litera_nagrody = 'a';
+			}
 			linia_z_planszy = linia_z_planszy.Remove(nr_pola%10, 1).Insert(nr_pola%10, litera_nagrody.ToString());
 
 			String[] lines = podglad_pliku.Lines;
@@ -180,7 +187,7 @@ namespace Giveaway
 
 		private void numericUpDown1_ValueChanged(object sender, EventArgs e)
 		{
-			sprawdz_wolne_pole((int)nr_pola_wybor.Value);
+			dodaj.Enabled = sprawdz_wolne_pole((int)nr_pola_wybor.Value);
 		}
 
 		private void dodaj_Click(object sender, EventArgs e)
@@ -202,8 +209,8 @@ namespace Giveaway
 						{
 							do
 							{
-								pole = (int)r.NextInt64(1, 100);
-							} while (dodaj.Enabled == false);
+								pole = (int)r.NextInt64(1, 100);								
+							} while (sprawdz_wolne_pole(pole) == false);
 						}
 					}
 					else if (recznie.Checked == true)
@@ -224,7 +231,7 @@ namespace Giveaway
 						do
 						{
 							pole = (int)r.NextInt64(1, 100);
-						} while (dodaj.Enabled == false);
+						} while (sprawdz_wolne_pole(pole) == false);
 					}
 				}
 				else if (recznie.Checked == true)
@@ -244,4 +251,6 @@ namespace Giveaway
 			}
 		}
 	}
+
+
 }
